@@ -29,4 +29,10 @@ public class Document {
         String rightPart = texte.substring(end);
         texte = leftPart + remplacement + rightPart;
     }
+    public void majuscules(int start, int end) {
+        String leftPart = texte.substring(0, start);
+        String middleUppercase=texte.substring(start,end).toUpperCase();
+        String rightPart = texte.substring(end);
+        texte = leftPart + middleUppercase + rightPart;
+    }
 }
