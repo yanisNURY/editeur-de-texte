@@ -44,8 +44,7 @@ public class Document {
         texte="";
     }
 
-    public void inserer(String i , String t) {
-        int a = Integer.parseInt(i);
+    public void inserer(int i , String t) {
         String leftPart = texte.substring(0, i);
         String rightPart = texte.substring(i);
         texte = leftPart + t + rightPart;

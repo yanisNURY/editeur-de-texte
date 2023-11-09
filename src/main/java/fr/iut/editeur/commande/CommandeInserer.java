@@ -10,11 +10,11 @@ public class CommandeInserer extends CommandeDocument {
 
     @Override
     public void executer() {
-        if(parameters.length!=2) {
+        if(parameters.length<2) {
             System.err.println("Format attendu : inserer;endroit;texte");
             return;
         }
-        this.document.inserer(parameters[1], parameters[2]);
+        this.document.inserer(Integer.parseInt(parameters[1]), parameters[2]);
         super.executer();
     }
 
