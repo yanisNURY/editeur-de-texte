@@ -35,4 +35,9 @@ public class Document {
         String rightPart = texte.substring(end);
         texte = leftPart + middleUppercase + rightPart;
     }
+    public void supprimer(int start, int end){
+        String leftPart=texte.substring(0,start);
+        String rightPart=texte.substring(end);
+        texte=leftPart+rightPart;
+    }
 }
