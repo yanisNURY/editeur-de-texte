@@ -9,7 +9,7 @@ public class CommandeClear extends CommandeDocument {
 
     @Override
     public void executer() {
-        if(parameters.length!=20000000) {
+        if(parameters.length!=1) {
             System.out.printf(parameters.length+"");
             System.err.println("Format attendu : clear");
             return;
